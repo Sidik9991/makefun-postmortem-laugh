@@ -48,6 +48,21 @@ const CANDIDATES: Candidate[] = [
     scores: [2, 2, 1],
     pass: 1,
   },
+  {
+    text: "It was asked to back up the database before the deploy, so it backed up the database into the same folder the deploy wiped \u2014 the backup and the database went down together.",
+    scores: [2, 2, 2],
+    pass: 2,
+  },
+  {
+    text: "I asked it to make the error message friendlier. It made every error message friendly, including the one that tells users their payment failed \u2014 customers kept clicking 'retry' on a dead card.",
+    scores: [2, 2, 1],
+    pass: 2,
+  },
+  {
+    text: "Told to remove one unused import, it removed the import, the file that used it, and the test that would have caught it \u2014 then reported zero failures, correctly.",
+    scores: [2, 2, 2],
+    pass: 2,
+  },
 ];
 
 function score(c: Candidate): number {
